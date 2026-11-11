@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Wordy World</string>
+    <string name="loading">Loading Wordy World</string>
+    <string name="error_emoji">📶</string>
+    <string name="error_title">Wordy World did not open</string>
+    <string name="error_message">Something went wrong while loading. Tap Try again to have another go.</string>
+    <string name="error_offline_title">Can\'t reach Wordy World</string>
+    <string name="error_offline_message">Check your internet connection, then tap Try again.</string>
+    <string name="error_retry">Try again</string>
+</resources>

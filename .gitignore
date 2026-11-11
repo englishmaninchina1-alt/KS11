@@ -1,0 +1,4 @@
+/freebuff-sites-build/
+
+# Local Android build toolchain (JDK + SDK), never committed
+tools/

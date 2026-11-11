@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_gravity="top"
+        android:indeterminate="false"
+        android:max="100"
+        android:progressBackgroundTint="@android:color/transparent"
+        android:progressTint="@color/wordy_orange"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/loadingSpinner"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/loading"
+        android:indeterminateTint="@color/wordy_orange"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/errorCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="24dp"
+        android:background="@drawable/bg_error_card"
+        android:elevation="12dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="22dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/error_emoji"
+            android:textSize="38sp" />
+
+        <TextView
+            android:id="@+id/errorTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/error_title"
+            android:textColor="@color/wordy_ink"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:maxWidth="280dp"
+            android:text="@string/error_message"
+            android:textColor="@color/wordy_ink_soft"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/retryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:backgroundTint="@color/wordy_orange"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:text="@string/error_retry"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</FrameLayout>

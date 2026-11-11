@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wordy_cream">#FFF7E6</color>
+    <color name="wordy_orange">#E2761B</color>
+    <color name="wordy_ink">#241A45</color>
+    <color name="wordy_ink_soft">#5A5470</color>
+    <color name="wordy_card">#FFFFFF</color>
+    <color name="wordy_line">#E7E2F5</color>
+    <color name="ic_launcher_background">#FFF7E6</color>
+</resources>
